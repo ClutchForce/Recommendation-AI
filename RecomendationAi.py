@@ -2,6 +2,20 @@
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 
+def get_all_customer_names(file_path):
+    data = pd.read_csv(file_path)
+    unique_names = data['Customer Name'].unique()
+    #sort names alphabetically
+    unique_names.sort()
+    return unique_names
+
+def print_customer_names_in_columns(names, columns=5):
+    for i, name in enumerate(names):
+        print(f"{name:<15}", end="")  # Print name with padding for alignment
+        if (i + 1) % columns == 0:  # After every 'columns' names, print a new line
+            print()
+    print()  # Print a final new line at the end
+
 def load_and_preprocess_data(file_path):
     # Load the data
     data = pd.read_csv(file_path)
@@ -46,8 +60,12 @@ def recommend_for_user_modified(user_name, user_item_matrix, item_similarity_mat
 file_path = 'grocery_sells.csv'  # Update this with the actual file path
 user_item_matrix = load_and_preprocess_data(file_path)
 item_similarity_df = calculate_item_similarity(user_item_matrix)
+all_customer_names = get_all_customer_names(file_path)
+
 
 try:
+    print("List of all customer names:")
+    print_customer_names_in_columns(all_customer_names, 5)
     while True:  # Infinite loop
         user_name = input("Enter a user name to get recommendations (or type 'exit' to stop): ")
         if user_name.lower() == 'exit':  # Convert input to lower case for case-insensitive comparison
