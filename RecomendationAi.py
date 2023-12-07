@@ -1,5 +1,6 @@
 
 #Pandas library used for data handling.
+import os
 import pandas as pd
 #Computes the cosine similarity between sub-categories.
 from sklearn.metrics.pairwise import cosine_similarity
@@ -67,10 +68,12 @@ def recommend_for_user_modified(user_name, user_item_matrix, item_similarity_mat
     return recommended_sub_categories
 
 # Main flow
-file_path = 'grocery_sells.csv'  # Update this with the actual file path
-user_item_matrix = load_and_preprocess_data(file_path)
+relative_path_from_cwd = 'grocery_sells.csv'
+absolute_file_path = os.path.join(os.getcwd(), relative_path_from_cwd)
+
+user_item_matrix = load_and_preprocess_data(absolute_file_path)
 item_similarity_df = calculate_item_similarity(user_item_matrix)
-all_customer_names = get_all_customer_names(file_path)
+all_customer_names = get_all_customer_names(absolute_file_path)
 
 
 try:
