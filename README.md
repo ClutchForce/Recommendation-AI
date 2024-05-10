@@ -23,7 +23,7 @@ Please make sure that both files are in the same location, as the application ne
 
 ## 👥 Contributors
 
-- **Hassan Abid** - Trivia level, Item Merchant - [GitHub](https://github.com/habid22)
-- **Yoosuf Bakhtair** - Asset implementation, Sprite Animation, Item Merchant - [GitHub](https://github.com/ybakhtai)
-- **Paul Gherghel** - Turn-Based RPG pokemon style fight scenes, Program skeletal structure, Map Design - [GitHub](https://github.com/ClutchForce)
-- **Joel Shibu** - Final boss fight, Map Design - [GitHub](https://github.com/jpayippa)
+- **Hassan Abid** - [GitHub](https://github.com/habid22)
+- **Yoosuf Bakhtair** - [GitHub](https://github.com/ybakhtai)
+- **Paul Gherghel** - [GitHub](https://github.com/ClutchForce)
+- **Joel Shibu** - [GitHub](https://github.com/jpayippa)
