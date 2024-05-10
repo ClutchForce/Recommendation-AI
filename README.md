@@ -1,7 +1,12 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/koBo1vTe)
+# 🛒 Product Recommendation System
 
+Welcome to our repository for the Product Recommendation System. enhances the shopping experience by suggesting products that are tailored to the user's previous purchases. This system analyzes data from the `grocery_sells.csv` file to understand purchasing patterns and deliver personalized recommendations.
 
-## Installation Instructions
+## 🎥 Demo Video
+
+Watch our application in action here: [Product Recommendation System Demo](https://youtu.be/_mOwVh0ekPs)
+
+## 🚀 Installation Instructions
 
 To use the `RecomendationAi` application, please follow these steps:
 
@@ -15,3 +20,10 @@ To use the `RecomendationAi` application, please follow these steps:
    - Open the folder containing these files and double-click on `RecomendationAi.exe` to run the application.
 
 Please make sure that both files are in the same location, as the application needs the `grocery_sells.csv` file to function correctly.
+
+## 👥 Contributors
+
+- **Hassan Abid** - Trivia level, Item Merchant - [GitHub](https://github.com/habid22)
+- **Yoosuf Bakhtair** - Asset implementation, Sprite Animation, Item Merchant - [GitHub](https://github.com/ybakhtai)
+- **Paul Gherghel** - Turn-Based RPG pokemon style fight scenes, Program skeletal structure, Map Design - [GitHub](https://github.com/ClutchForce)
+- **Joel Shibu** - Final boss fight, Map Design - [GitHub](https://github.com/jpayippa)
